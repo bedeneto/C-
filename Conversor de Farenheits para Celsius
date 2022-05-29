@@ -1,0 +1,32 @@
+using System;
+
+namespace Projeto01
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //string nome = "";
+            float TempC = 0;
+            float TempF = 0;
+            //float IMC = 0;
+
+            //Console.Write("O nome do paciente é: ");
+            //nome = Console.ReadLine();
+
+            Console.Write("Digite a temperatura em Farenheits: ");
+            TempF = float.Parse(Console.ReadLine());
+
+            //Console.Write("Digite a altura do paciente: ");
+            //altura = float.Parse(Console.ReadLine());
+
+            //IMC = (peso/(altura*altura));
+            TempC = 5 * ((TempF - 32) / 9);
+
+            Console.WriteLine("A temperatura em graus Celsius é : " + TempC + "º");
+            Console.ReadLine();
+
+            
+        }
+    }
+}
