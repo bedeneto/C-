@@ -1,0 +1,26 @@
+using System;
+
+namespace Projeto01
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            float Altura = 0;
+            float Largura = 0;
+            float Area = 0;
+            Console.Write("Digite a altura do retângulo: ");
+            Altura = float.Parse(Console.ReadLine());
+
+            Console.Write("Digite a largura do retângulo: ");
+            Largura = float.Parse(Console.ReadLine());
+
+            Area = Altura*Largura;
+
+            Console.WriteLine("A área do retangulo é igual a " + Area);
+            Console.ReadLine();
+
+        }
+    }
+}
