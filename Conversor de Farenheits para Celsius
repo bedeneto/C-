@@ -14,7 +14,7 @@ namespace Projeto01
 
             TempC = 5 * ((TempF - 32) / 9);
 
-            Console.WriteLine("A temperatura em graus Celsius é : " + TempC + "º");
+            Console.WriteLine("A temperatura em graus Celsius é : " + TempC.ToString("0.00") + "º");
             Console.ReadLine();
 
             
