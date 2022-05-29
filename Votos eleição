@@ -1,0 +1,53 @@
+using System;
+
+namespace Projeto01
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            float eleitores = 0;
+            float votos = 0;
+            float votos_branco = 0;
+            float votos_nulos = 0;
+            float votos_validos = 0;
+            float percent_branco = 0;
+            float percent_nulos = 0;
+            float percent_validos = 0;
+
+
+            Console.Write("Digite o total de eleitores do município: ");
+            eleitores = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o total de votos: ");
+            votos = int.Parse(Console.ReadLine());
+            Console.WriteLine(votos);
+
+            Console.Write("Digite o total de votos em branco: ");
+            votos_branco = int.Parse(Console.ReadLine());
+            Console.WriteLine(votos_branco);
+
+            Console.Write("Digite o total de votos nulos: ");
+            votos_nulos = int.Parse(Console.ReadLine());
+            Console.WriteLine(votos_nulos);
+
+            Console.Write("Digite o total de votos válidos: ");
+            votos_validos = int.Parse(Console.ReadLine());
+            Console.WriteLine(votos_validos);
+
+            percent_branco = votos_branco / votos;
+            Console.WriteLine(percent_branco);
+            percent_nulos = votos_nulos / votos;    
+            percent_validos = votos_validos / votos;    
+            
+
+            Console.WriteLine("A quantidade de votos foi " + votos);            
+            Console.WriteLine("A porcentagem de votos em branco foi " + (percent_branco*100)+ "%");
+            Console.WriteLine("A porcentagem de votos nulos foi " + (percent_nulos*100) + "%");
+            Console.WriteLine("A porcentagem de votos válidos foi " + (percent_validos*100) + "%");
+            Console.ReadLine();
+
+        }
+    }
+}
